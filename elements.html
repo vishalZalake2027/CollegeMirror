@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/fav.png" />
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib" />
+	<!-- Meta Description -->
+	<meta name="description" content="" />
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="" />
+	<!-- meta character set -->
+	<meta charset="UTF-8" />
+	<!-- Site Title -->
+	<title>Elements</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
+	<!--
+      CSS
+      =============================================
+    -->
+	<link rel="stylesheet" href="css/linearicons.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/hexagons.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	
+  </head>
+</head>
+
+<body>
+	<!-- ================ Start Header Area ================= -->
+	<header class="default-header">
+		<nav class="navbar navbar-expand-lg  navbar-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="data:image/png;base64,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" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="lnr lnr-menu"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="courses.html">Courses</a></li>
+						<!-- Dropdown -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+								Pages
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="elements.html">Elements</a>
+								<a class="dropdown-item" href="course-details.html">Course Details</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+								Blog
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="blog-home.html">Blog Home</a>
+								<a class="dropdown-item" href="blog-single.html">Blog Details</a>
+							</div>
+						</li>
+						<li><a href="contacts.html">Contacts</a></li>
+
+						<li>
+							<button class="search">
+								<span class="lnr lnr-magnifier" id="search"></span>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="search-input" id="search-input-box">
+			<div class="container">
+				<form class="d-flex justify-content-between">
+					<input type="text" class="form-control" id="search-input" placeholder="Search Here" />
+					<button type="submit" class="btn"></button>
+					<span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- ================ End Header Area ================= -->
+
+	<!-- ================ start banner Area ================= -->
+	<section class="banner-area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12 banner-right">
+					<h1 class="text-white">
+						Elements
+					</h1>
+					<p class="mx-auto text-white  mt-20 mb-40">
+						In the history of modern astronomy, there is probably no one greater leap forward than the building.
+					</p>
+					<div class="link-nav">
+						<span class="box">
+							<a href="index.html">Home </a>
+							<i class="lnr lnr-arrow-right"></i>
+							<a href="elements.html">Elements</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ================ End banner Area ================= -->
+
+	<!-- Start Sample Area -->
+	<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading">Text Sample</h3>
+			<p class="sample-text">
+				Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short
+				film
+				to show off their creative prowess. Many have great ideas and want to “wow” the<sup>Superscript</sup> scene, or
+				video
+				renters with their big project. But once you have the<sub>Subscript</sub> “in the can” (no easy feat), how do you
+				move
+				from a <del>Strike</del> through of master DVDs with the <u>“Underline”</u> marked hand-written title inside a
+				secondhand
+				CD case, to a pile of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting
+				on
+				your doorstep? You need to create eye-popping artwork and have your project replicated. Using a reputable full
+				service
+				DVD Replication company like PacificDisc, Inc. to partner with is certainly a helpful option to ensure a
+				professional
+				end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD replication
+				results:
+
+			</p>
+		</div>
+	</section>
+	<!-- End Sample Area -->
+
+	<!-- Start Button -->
+	<section class="button-area">
+		<div class="container border-top-generic">
+			<h3 class="text-heading">Sample Buttons</h3>
+			<div class="button-group-area">
+				<a href="#" class="genric-btn default">Default</a>
+				<a href="#" class="genric-btn primary">Primary</a>
+				<a href="#" class="genric-btn success">Success</a>
+				<a href="#" class="genric-btn info">Info</a>
+				<a href="#" class="genric-btn warning">Warning</a>
+				<a href="#" class="genric-btn danger">Danger</a>
+				<a href="#" class="genric-btn link">Link</a>
+				<a href="#" class="genric-btn disable">Disable</a>
+			</div>
+			<div class="button-group-area mt-10">
+				<a href="#" class="genric-btn default-border">Default</a>
+				<a href="#" class="genric-btn primary-border">Primary</a>
+				<a href="#" class="genric-btn success-border">Success</a>
+				<a href="#" class="genric-btn info-border">Info</a>
+				<a href="#" class="genric-btn warning-border">Warning</a>
+				<a href="#" class="genric-btn danger-border">Danger</a>
+				<a href="#" class="genric-btn link-border">Link</a>
+				<a href="#" class="genric-btn disable">Disable</a>
+			</div>
+			<div class="button-group-area mt-40">
+				<a href="#" class="genric-btn default radius">Default</a>
+				<a href="#" class="genric-btn primary radius">Primary</a>
+				<a href="#" class="genric-btn success radius">Success</a>
+				<a href="#" class="genric-btn info radius">Info</a>
+				<a href="#" class="genric-btn warning radius">Warning</a>
+				<a href="#" class="genric-btn danger radius">Danger</a>
+				<a href="#" class="genric-btn link radius">Link</a>
+				<a href="#" class="genric-btn disable radius">Disable</a>
+			</div>
+			<div class="button-group-area mt-10">
+				<a href="#" class="genric-btn default-border radius">Default</a>
+				<a href="#" class="genric-btn primary-border radius">Primary</a>
+				<a href="#" class="genric-btn success-border radius">Success</a>
+				<a href="#" class="genric-btn info-border radius">Info</a>
+				<a href="#" class="genric-btn warning-border radius">Warning</a>
+				<a href="#" class="genric-btn danger-border radius">Danger</a>
+				<a href="#" class="genric-btn link-border radius">Link</a>
+				<a href="#" class="genric-btn disable radius">Disable</a>
+			</div>
+			<div class="button-group-area mt-40">
+				<a href="#" class="genric-btn default circle">Default</a>
+				<a href="#" class="genric-btn primary circle">Primary</a>
+				<a href="#" class="genric-btn success circle">Success</a>
+				<a href="#" class="genric-btn info circle">Info</a>
+				<a href="#" class="genric-btn warning circle">Warning</a>
+				<a href="#" class="genric-btn danger circle">Danger</a>
+				<a href="#" class="genric-btn link circle">Link</a>
+				<a href="#" class="genric-btn disable circle">Disable</a>
+			</div>
+			<div class="button-group-area mt-10">
+				<a href="#" class="genric-btn default-border circle">Default</a>
+				<a href="#" class="genric-btn primary-border circle">Primary</a>
+				<a href="#" class="genric-btn success-border circle">Success</a>
+				<a href="#" class="genric-btn info-border circle">Info</a>
+				<a href="#" class="genric-btn warning-border circle">Warning</a>
+				<a href="#" class="genric-btn danger-border circle">Danger</a>
+				<a href="#" class="genric-btn link-border circle">Link</a>
+				<a href="#" class="genric-btn disable circle">Disable</a>
+			</div>
+			<div class="button-group-area mt-40">
+				<a href="#" class="genric-btn default circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn primary circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn success circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn info circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn warning circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn danger circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
+			</div>
+			<div class="button-group-area mt-10">
+				<a href="#" class="genric-btn default-border circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn primary-border circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn success-border circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn info-border circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn warning-border circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
+				<a href="#" class="genric-btn danger-border circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
+			</div>
+			<div class="button-group-area mt-40">
+				<a href="#" class="genric-btn primary e-large">Extra Large</a>
+				<a href="#" class="genric-btn success large">Large</a>
+				<a href="#" class="genric-btn primary">Default</a>
+				<a href="#" class="genric-btn success medium">Medium</a>
+				<a href="#" class="genric-btn primary small">Small</a>
+			</div>
+			<div class="button-group-area mt-10">
+				<a href="#" class="genric-btn primary-border e-large">Extra Large</a>
+				<a href="#" class="genric-btn success-border large">Large</a>
+				<a href="#" class="genric-btn primary-border">Default</a>
+				<a href="#" class="genric-btn success-border medium">Medium</a>
+				<a href="#" class="genric-btn primary-border small">Small</a>
+			</div>
+		</div>
+	</section>
+	<!-- End Button -->
+
+	<!-- Start Align Area -->
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30">Left Aligned</h3>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-9 mt-sm-20">
+						<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+							transfer
+							money to them through any US bank or payment system. As a result of this law, most of the popular online casino
+							networks
+							such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves
+							being
+							chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and
+							new
+							online casinos started taking root. These began to operate under a different business umbrella, and by doing
+							that,
+							rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking
+							systems
+							that would accept this new clarification and start doing business with me. Listed in this article are the
+							electronic
+							banking systems that accept players from the United States that wish to play in online casinos.</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border text-right">
+				<h3 class="mb-30">Right Aligned</h3>
+				<div class="row">
+					<div class="col-md-9">
+						<p class="text-right">Over time, even the most sophisticated, memory packed computer can begin to run slow if we
+							don’t
+							do something to prevent it. The reason why has less to do with how computers are made and how they age and more
+							to
+							do with the way we use them. You see, all of the daily tasks that we do on our PC from running programs to
+							downloading
+							and deleting software can make our computer sluggish. To keep this from happening, you need to understand the
+							reasons
+							why your PC is getting slower and do something to keep your PC running at its best. You can do this through
+							regular
+							maintenance and PC performance optimization programs</p>
+						<p class="text-right">Before we discuss all of the things that could be affecting your PC’s performance, let’s
+							talk
+							a little about what symptoms</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/elements/d.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<h3 class="mb-30">Definition</h3>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Definition 01</h4>
+							<p>JSPM’s campus at Hadapsar is technology intensive. It makes use of
+								 the best digital tools, practices, and techniques for enhancing the effectiveness of 
+								 the teaching-learning process, research works, and campus living at large.
+								  It lays the needed foundation for students to acquire higher levels of knowledge and
+								   expertise from the time they spent in the campus. Through the use of the cutting-edge digital 
+								   
+								   tool, JSPM encourages the culture of self-learning among its students.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Definition 02</h4>
+							<p>JSPM’s campus at Hadapsar is technology intensive. It makes use of the best digital tools, 
+								practices, and techniques for enhancing the effectiveness of the teaching-learning process, research works,
+								 and campus living at large. It lays the needed foundation for students to acquire higher
+								  levels of knowledge and expertise from the time they spent in the campus. Through the use of
+								   the cutting-edge digital tool, JSPM encourages the culture of self-learning among its students.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-defination">
+							<h4 class="mb-20">Definition 03</h4>
+							<p>JSPM’s campus at Hadapsar is technology intensive. It makes use of the
+								 best digital tools, practices, and techniques for enhancing the effectiveness
+								  of the teaching-learning process, research works, and campus living at large. '
+								  
+								  It lays the needed foundation for students to acquire higher levels of knowledge and expertise from
+								   the time they spent in the campus. Through the use of the cutting-edge digital tool, JSPM encourages 
+								   the culture of self-learning among its students.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<h3 class="mb-30">Block Quotes</h3>
+				<div class="row">
+					<div class="col-lg-12">
+						<blockquote class="generic-blockquote">
+							“Recently, the US Federal government banned online casinos from operating in America by making it illegal to
+							transfer money
+							to them through any US bank or payment system. As a result of this law, most of the popular online casino
+							networks
+							such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves
+							being
+							chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and
+							new
+							online casinos started taking root. These began to operate under a different business umbrella, and by doing
+							that,
+							rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking
+							systems
+							that would accept this new clarification and start doing business with me. Listed in this article are the
+							electronic
+							banking”
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<h3 class="mb-30">Table</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">#</div>
+							<div class="country">Countries</div>
+							<div class="visit">Visits</div>
+							<div class="percentage">Percentages</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">01</div>
+							<div class="country"> <img src="img/elements/f1.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">02</div>
+							<div class="country"> <img src="img/elements/f2.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-2" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">03</div>
+							<div class="country"> <img src="img/elements/f3.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">04</div>
+							<div class="country"> <img src="img/elements/f4.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-4" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">05</div>
+							<div class="country"> <img src="img/elements/f5.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-5" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">06</div>
+							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">07</div>
+							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-7" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+						<div class="table-row">
+							<div class="serial">08</div>
+							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
+							<div class="visit">645032</div>
+							<div class="percentage">
+								<div class="progress">
+									<div class="progress-bar color-8" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+									 aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<h3>Image Gallery</h3>
+				<div class="row gallery-item">
+					<div class="col-md-4">
+						<a href="img/elements/g1.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g2.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g3.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/elements/g4.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/elements/g5.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g6.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g7.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g8.jpg" class="img-pop-up">
+							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-md-4">
+						<h3 class="mb-20">Image Gallery</h3>
+						<div class="typography">
+							<h1>This is header 01</h1>
+							<h2>This is header 02</h2>
+							<h3>This is header 03</h3>
+							<h4>This is header 04</h4>
+							<h5>This is header 05</h5>
+							<h6>This is header 06</h6>
+						</div>
+					</div>
+					<div class="col-md-4 mt-sm-30">
+						<h3 class="mb-20">Unordered List</h3>
+						<div class="">
+							<ul class="unordered-list">
+								<li>Fta Keys</li>
+								<li>For Women Only Your Computer Usage</li>
+								<li>Facts Why Inkjet Printing Is Very Appealing
+									<ul>
+										<li>Addiction When Gambling Becomes
+											<ul>
+												<li>Protective Preventative Maintenance</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>Dealing With Technical Support 10 Useful Tips</li>
+								<li>Make Myspace Your Best Designed Space</li>
+								<li>Cleaning And Organizing Your Computer</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 mt-sm-30">
+						<h3 class="mb-20">Ordered List</h3>
+						<div class="">
+							<ol class="ordered-list">
+								<li><span>Fta Keys</span></li>
+								<li><span>For Women Only Your Computer Usage</span></li>
+								<li><span>Facts Why Inkjet Printing Is Very Appealing</span>
+									<ol class="ordered-list-alpha">
+										<li><span>Addiction When Gambling Becomes</span>
+											<ol class="ordered-list-roman">
+												<li><span>Protective Preventative Maintenance</span></li>
+											</ol>
+										</li>
+									</ol>
+								</li>
+								<li><span>Dealing With Technical Support 10 Useful Tips</span></li>
+								<li><span>Make Myspace Your Best Designed Space</span></li>
+								<li><span>Cleaning And Organizing Your Computer</span></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<h3 class="mb-30">Form Element</h3>
+						<form action="#">
+							<div class="mt-10">
+								<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'"
+								 required class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'"
+								 required class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'"
+								 required class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
+								 required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+								<input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'"
+								 required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+								<div class="form-select" id="default-select" ">
+											<select>
+												<option value=" 1
+								 ">City</option>
+												<option value=" 1 ">Dhaka</option>
+												<option value=" 1
+								 ">Dilli</option>
+												<option value=" 1 ">Newyork</option>
+												<option value=" 1
+								 ">Islamabad</option>
+											</select>
+										</div>
+									</div>
+									<div class="
+								 input-group-icon mt-10 ">
+										<div class=" icon "><i class=" fa fa-globe " aria-hidden=" true
+								 "></i></div>
+										<div class=" form-select " id=" default-select
+								 ">
+									<select>
+										<option value=" 1">Country</option>
+									<option value="1">Bangladesh</option>
+									<option value="1">India</option>
+									<option value="1">England</option>
+									<option value="1">Srilanka</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="mt-10">
+								<textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'"
+								 required></textarea>
+							</div>
+							<!-- For Gradient Border Use -->
+							<!-- <div class="mt-10">
+										<div class="primary-input">
+											<input id="primary-input" type="text" name="first_name" placeholder="Primary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primary color'">
+											<label for="primary-input"></label>
+										</div>
+									</div> -->
+							<div class="mt-10">
+								<input type="text" name="first_name" placeholder="Primary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primary color'"
+								 required class="single-input-primary">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="first_name" placeholder="Accent color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Accent color'"
+								 required class="single-input-accent">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="first_name" placeholder="Secondary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary color'"
+								 required class="single-input-secondary">
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-3 col-md-4 mt-sm-30">
+						<div class="single-element-widget">
+							<h3 class="mb-30">Switches</h3>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>01. Sample Switch</p>
+								<div class="primary-switch">
+									<input type="checkbox" id="default-switch">
+									<label for="default-switch"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>02. Primary Color Switch</p>
+								<div class="primary-switch">
+									<input type="checkbox" id="primary-switch" checked>
+									<label for="primary-switch"></label>
+								</div>
+							</div>
+							<div class="switch-wrap d-flex justify-content-between">
+								<p>03. Confirm Color Switch</p>
+								<div class="confirm-switch">
+									<input type="checkbox" id="confirm-switch" checked>
+									<label for="confirm-switch"></label>
+								</div>
+							</div>
+						</div>
+						<div class="single-element-widget mt-30">
+							<h3 class="mb-30">Selectboxes</h3>
+							<div class="default-select" id="default-select">
+								<select>
+									<option value=" 1
+							 ">English</option>
+									<option value=" 1 ">Spanish</option>
+									<option value=" 1
+							 ">Arabic</option>
+									<option value=" 1 ">Portuguise</option>
+									<option value=" 1
+							 ">Bengali</option>
+								</select>
+							</div>
+						</div>
+						<div class="
+							 single-element-widget mt-30 ">
+							<h3 class=" mb-30 ">Checkboxes</h3>
+							<div class=" switch-wrap
+							 d-flex justify-content-between ">
+								<p>01. Sample Checkbox</p>
+								<div class=" primary-checkbox
+							 ">
+									<input type=" checkbox " id=" default-checkbox ">
+									<label for=" default-checkbox
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>02. Primary Color Checkbox</p>
+								<div class=" primary-checkbox
+							 ">
+									<input type=" checkbox " id=" primary-checkbox " checked>
+									<label for="
+							 primary-checkbox "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex
+							 justify-content-between ">
+								<p>03. Confirm Color Checkbox</p>
+								<div class=" confirm-checkbox
+							 ">
+									<input type=" checkbox " id=" confirm-checkbox ">
+									<label for=" confirm-checkbox
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>04. Disabled Checkbox</p>
+								<div class=" disabled-checkbox ">
+									<input type="
+							 checkbox " id=" disabled-checkbox " disabled>
+									<label for=" disabled-checkbox
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>05. Disabled Checkbox active</p>
+								<div class=" disabled-checkbox
+							 ">
+									<input type=" checkbox " id=" disabled-checkbox-active
+							 " checked disabled>
+									<label for=" disabled-checkbox-active
+							 "></label>
+								</div>
+							</div>
+						</div>
+						<div class=" single-element-widget mt-30
+							 ">
+							<h3 class=" mb-30 ">Radios</h3>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>01. Sample radio</p>
+								<div class=" primary-radio ">
+									<input type=" checkbox
+							 " id=" default-radio ">
+									<label for=" default-radio
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>02. Primary Color radio</p>
+								<div class=" primary-radio ">
+									<input type="
+							 checkbox " id=" primary-radio " checked>
+									<label for=" primary-radio
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>03. Confirm Color radio</p>
+								<div class=" confirm-radio ">
+									<input type="
+							 checkbox " id=" confirm-radio " checked>
+									<label for=" confirm-radio
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>04. Disabled radio</p>
+								<div class=" disabled-radio ">
+									<input type="
+							 checkbox " id=" disabled-radio " disabled>
+									<label for=" disabled-radio
+							 "></label>
+								</div>
+							</div>
+							<div class=" switch-wrap d-flex justify-content-between
+							 ">
+								<p>05. disable the barcodes</p>
+								<div class=" disabled-radio ">
+									<input type="
+							 checkbox " id=" disabled-radio-active " checked disabled>
+									<label for=" disabled-radio-active
+							 "></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Align Area -->
+
+	<!-- ================ start footer Area ================= -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Top Products</h4>
+					<ul>
+						<li><a href="#">Managed Website</a></li>
+						<li><a href="#">Manage Reputation</a></li>
+						<li><a href="#">Power Tools</a></li>
+						<li><a href="#">Marketing Service</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Brand Assets</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Features</h4>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Brand Assets</a></li>
+						<li><a href="#">Investor Relations</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Resources</h4>
+					<ul>
+						<li><a href="#">Guides</a></li>
+						<li><a href="#">Research</a></li>
+						<li><a href="#">Experts</a></li>
+						<li><a href="#">Agencies</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 single-footer-widget">
+					<h4>Newsletter</h4>
+					<p>You can trust us. we only send promo offers,</p>
+					<div class="form-wrap" id="mc_embed_signup">
+						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+						 method="get" class="form-inline">
+							<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+							 required="" type="email">
+							<button class="click-btn btn btn-default text-uppercase">subscribe</button>
+							<div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom row align-items-center">
+				<p class="footer-text m-0 col-lg-8 col-md-12">
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<div class="col-lg-4 col-md-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ================ End footer Area ================= -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/hexagons.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
+

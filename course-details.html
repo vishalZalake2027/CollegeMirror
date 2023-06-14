@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/fav.png" />
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>Course Details</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
+    <!--
+      CSS
+      =============================================
+    -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/hexagons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- ================ Start Header Area ================= -->
+    <header class="default-header">
+        <nav class="navbar navbar-expand-lg  navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAACECAMAAACeeohiAAACClBMVEX////+/v7jHiThAAD++/vtdHfiAAb98PDscHT0tbf65eX74eLmO0H40tLiAArjGyHwmZvkFB3rX2LnLzT0ra7sgoPth4no6OjqVloAAADu7u7sHSTiChTlNTr29vbyqKnt8/nV1dWxICTkJiwnJiW7ISViZGP4y8zGxsZZWVgADQqZIiU8ICHVHyT3wsOvr6+en57IICXd3+SAgIAAHRsvHR1HRkUZFxa7u7s8PDuOjo5tJifkumH///f44b/raGvq4tLd187e0r3y7dLz05fmSEwWKiiDHyFPIyOlIiUoNjVaICHo0rbhq57IbRTYiWjTjkTerHjz1nn11mfiqlrqqUfhk1/KeDO7ezbLoHrXxr6tUjfBZiGxd2T0ukXxqRvkpmbWtHvLilzauZHQmTjQo17MgiqojVO6ilqnZjC/jUKnlG3isJS/oGrzw5addzjAuqaOf1enh2uabkB7WC+SbFF2TzltOyrrvnhhPjHbVTy1RSKTWD7bOh7xj3nTYkxqVT/Nek5ybk/kmInlgEWemYXLwJuBaVrBm0HhcS7LggRVTT+aZ2StTVPLVFjrpn2snzzjegCuY1nRrjT70kocAAD76ZnOUB+rOVRfJjd/azOpjILKal7ukwlQOTi/oop+QUH82zSls8jxvBOKnHS1y6YuUi9IUClEeDhnjVqEok+LhUOANiS+fX52lB5bAAAWYElEQVR4nM1bC0MaZ7qegTGKF4YRYXSEgRFEQBQEuQrITUWliRpp1Bi8G2MSQ6JJsE22ZrfRJNumaXS72zTRdO3uOXvO2f943m8GURTvJt2njSIO3zzzfs/7vs/3zYhhFwKimLiYgS4GRJWq6j+IEFElp+T/QYSADgWEfm8aO6iiKFWRiqI+AyGiqqToOFSLKZ0Ek+gocfXRB5bIzj2lhEJ86UhIVSp+qqJIQ5RKJT3iWHH7+floSo5EUVEHSeqqiLA/QVTpSLIDonA4zh8frPgYyHSkWEJgX1y+QuASMamTHXn0uekchyoVpZLA90RfP3yVwE+/Z5YRVWJKDnTw6MDVq7EAEJJT4t+vDhFVIqEMhgaTg4PJCZYvjKLfixB/ctAOjoW+vDY0dG2Yhfckot+tUldBxZHgGI7j2Mj10dEbNLzEQNSU7tNrqPQgZGKKRNoBEqFkKpUaG2cQIUxCUmJZgeML4cwJd0l8AFJBykCBnUj5r0z6x6b4n5CopQcPLwjZWfmIqDyQOhHoBGkHMQhO+ycnr8z4Z6M8IQIIiUQ6kjoWpOasfCr2oYgiySwdHFuYm7tyc+7K3K2gwI+QkCRVtP8jhVB6Vj77IEFVGRPo4FhmfHx8bmZ8/FosSxBDlVpyQec6ATR8R8/SwbGh+dtTd/rvzs0u7DDku/2ZJ+OUAHNKqYVEF86evJeOhoITN/tiOYq4RE19JgtLaHQ5KQsn77t/+8HC8OLivdguRyRqneYzEMKhDKry6NxZevjocebW8pPF28ReQioojPgn56NRUdJd7QACXy1NTU3FMguZZ1/f2UMTk0gplaAh/JPRwjXinTK4c97oV0+mggsLC8Hxxad/IPIIQbfXXCAV4gCKNVSelPnzfrOytTD+7NmXz/5Y/6c8pkjUlKb44DACTs1Ho9iPIh0kOpHLaqE/fPdovn/hm2+TQ+9618J5TAlIe13RgVEENJyaT7tYekm6+z9v3cU70cGwaDCAvEbau/JgeGFh8NrD53r9n+ldRSM0q0hk8qX5A6FvZyhPysp8qKEl7WgHC0YW+iPw3eh1Lt/qD05ef3lryGpy+tgduoFEKPF8dfipiFRXFkLzqfnsg0S6R8qB/v6+ywkMo9eefD3/IhOL+ZPzL7bSs/eFAGFMxHd/+MHw3NCtepH0U7QOQkOClHPaCfS//PZlAscSoy9fvpiZmIhlZuZebI28GhsOYSg4kT8bvrsy9+TR4+9fy0ny4gsjqsq6PWUQi/X9sBDE2G+f/vWv/vk5/8zMzPwbLrye+nFCiwWCE7fX3n7/+PGa0dP7bJD8BJUarLt4b93BguMx0POdp4Dki/nxmbmZFzfZ8PpGKsYlhsf7rn+/FHcZWdwYn7/6hRhM/sXSAXMqyi+DwcEM8PnqacvT0TcvXsz1zcy9iWCr61eTq2u3pvsG77k3baD1v/xl895AoBku5sxWsADQOkst2VsFwaP29ScC2NOWuq/Xr66v++ce3H3Dsqv+d4vLKx/7Y/4ZH4PRhvjjzeX5jQAGhfEC12WERrRHygIfZs7f38/g0pau2Y2N1Lo/MTIzQXMPF1dWbrxdnsz4MyECY33LyyvL01cDUBjVlOgMGiqrKgCNQk6R+XSA0OTs4EIoKm25/mo7NTDoHxl5cXdtbXnl4fuPP7tvxTJ9k9+FMMbnfLzojwkWlpIrNHnjSo7nJ6FI0UHAAqYZy6eDY2V9/Quxn/7a8vWHDz9FF1JX/UNLj1Yevv1b3GmYu5zJXHvc9pDFwivxXwJCeWwW7xublB+/2pGU70dHOSlC5hTfDyw1EAz6Z776+mt/yJ6enn8Esbnxt5+df04XD/bNJm89Xnm8hUFZzLls6GUiEsbbHfp4PsUHVgANSvJAR88WoFQsdnPoxvUnw0bjL08Qm7c/65fvTUEl6J+evbX47vEaqoy541G3JxUNu0OXnUHghEaeb053+QQGB67OTt+d81qfr62sPHj78aPTuTSbWYgGM4OTQzfvvXv0HZuXAsjCys9XGHENMqcFooMK0Hx/JpPx3/MCm/vDr9ssf1kbGhvLBIOxzJdzSzdvLvX+si8FcGRhz2XQZCpKdUDK2fBEB/sWfvJPLz169HDu/d8szk1r+sNYciAWG5he3Hz3buWxJbQ/B8B+UKqzF0ZCMKcF2IBLhY7e5/cPITZfDi05vT7OPvyhbzyVSiXvLS8vPYpvWguIjrewZ5wyooA5zUUHhaFvfm7p/r2ZyaWVTYNtJGx9dnkrkkwm/bEtw7LBZywkOsHCnonQgXXWnriHFvx+/+h8/9TEvSeLi5uP5ifuDk/5x2ZHmMwrSLsgHabZwnE9w7osm/RK3a453RecrRvXZpPJZ+Ox2FDcYnm0OLaxPrc4nRr78Y42kBkbiGWmsIKiw3c2rJS7WX98EaoSSwWzTBaUMha98Xby1uiPs19mYsmPcadzLTWWWr97exqm6o6dwWIQuvnEIXR4UWctNQ9xybF8JDq1ulwk2tfRc+OFhh9szS1OXusbjGWGfoa84sL9qdR0cnbsRUTLMCyemE4OTgT4tUdhRqi5itQCdIpj+ZQ2N0vaRYdIGQvcubGWTmQWxv0DA8nHFovzNsPYI6t9fcmxLS0LAmHDw4OZTDDB4AGWOGTKgFClpJlHxUkkBFVZXVDKEJ4r769vRWIIG7eWNzctM7EozXEj/tRYmmPR2YjgQCbZNzkVtNMsHig0BrIf8pOvd8C6k1R7wWgHsND1Z+M/pKcQnfn4x03LyvYHf9BIx1IDM1ucHUUoenU9mbz88tq1LTsbiBa8KKyEOoXJLyZVIB9FcYF6Fo2Grjwbhz4R82/f+/hxOe58HsyktsfWwTinMlMVZcUsTmRmR6/NPru++IsWDwQKBAgjlGA9VOSJd1cbysEaUMqDhAKBKB2ZhLqcSq0vxZc/xjeXbSwW/Wnj1431abDysYUETbOBxLd9mYQVRQuLBA/kKFYsE4GJKT/FglkgpDigoGg0ymhHJqem55fiCKCfNMMyiNCv07PbyYEB/3C4GAhNhUb+btcCjKFoYF9bJZSnpYNhFWpSRKoU+68tEAyxWjvHeqAMxnthuixrEYYJMcGr27+u37o8C1k/mobajNN2z9+1rFbL0pFIfpLBMhyMIqk+UV4pqncAthAR2h+hQJhhtTTLWpe3ltfo8MpaIkKHQ3QoNra9fntr68HQswdbIzTOslya02ppXDsSyW8cGI7ogFGs3kX7odu+leKduqlSqfgI7dMQFgJCDBsIhbEwg2NhGmPoEM7SU4Pbr+6GOHoEQDMsS4+kOUh3rXEr/4qwYj46qt0CDSVaXnYYH41CmYOig9fQfkJhIMSGoAyjuQRKOMOCTU5EY5eTQZrmf8viTNho5GhGa3+e74EwQkaCdjr2nAYgOzTR8vavmguJGmPCIZZl+PaNsVp+axCH+cHoVx8G7NDXaRiEsYfTHEdr7dbneVUMtIPolDefbaesQnVQ1BgbDtMMw6DXhDarDRSt0Pb2QJjm4DcwW3YPZ+cYu/E5t48OP1knknJBQiRESFWUvzJlYSJAIvCSzfKBaPF8NiLAB2dxluHCtNZoN9o8e8MDiQ50KPLMdHJ1aK+GMJwOM7RWCyQhn/l3UJPg+UzBr4ANzRntWghROr03t0DK5KnrzgFC+0SNERAgOw18IDaoviDxwDeW5zMRiSJthUe2tHajJ50O5UcHlcGOc9EBQmpEqEjQEIZraZgqBiLAIBJaFCYMlWEt8Pl1oz8TZQPA5sFzO+dJr0YOSll9TjoYVibKiRrD7UaIDXQoxvrcrgVK0BJYnOejDW//6p9IRZlQYvXB9RHOY11d3bs6xZQoOUSHVppCIJQ6+QGoUaUWqYqgRrBGjxGqLsSI/mI4DAlN2/kexX8Jr2+nXqWCTCiy+mQ0kk6vhuxZffGTpVDxVVmdN/Yx5hBXiKUFgCo1bz9YjxUIQdWluZERJgyJH+YJ2RHS02PJDxs/hSJbD669mkok0h40p1qayEmZ3FuUhcpcdHSAmmWFsZNltMdqhNRhWTskNBuKRqIhFCKej3Hmx9mxjYHESPpuMjWctnqgHmrDaf4mOCFklvLAwMfsQR92p6FBnhU1a/d4kK0Bg2pkmUgi9lMsGoryiNweHR3b3shM3Z9JrW9ZIY5aOi3QwRSIjrzhIu5hCKiQwopApWA44AMB0vJ8wr+tRqYmJmICMv7pH9e3t5PzNzPJD2ljOP2Pf/0WxrEdKVPSc5TBAoTQEkVVhNoA4gPiQYUPik04Elldja0+/+d/wXpweno7OXMzA87+t9/+kWaE+y18R6dO5ndOjoYOlYjU/RsIoRxno4kQixp7g0ZTtrr623P6v//5bjA5PXRrHgKW/DABnwgE+BrBS1l13jJYgBASdbkCZRjUoNU3LwJgLsLvX79+8K9/WVksnbbdHk9Oj47CMtG/naTLSoMZNgw99wKaRGFUoP0/UYnx7zabx2hM/88/CIjQ7aUVG0ejwkewz3/ry/iTLz8kUx/GJoLBqaFocIThJ0t3wZMloAzVECrb7TEGmiUknM3Ik0GbXqzvf5MDyQ8vx7a3168OzM5uD83EipDBIE9VlfNBlJYdhlIJqtQUqtSod7zxI4Hwj64SDaXwrZiw/vH+/Ojk7TcTkfTUTDL5Ygu1UBEpOWLM4zK+WKE+sOebgxqNLnR7LDQ0O4KxIwGi4odSDNY0pXfuMFGoytYIyApCRw/Pjgh0jhpQcdyasLTyqOdjpNKdKcPo2b4RbCuEhb74g0L5w50//embK4nixDCTHYcNDQ8Nt8DR0iOfvWk/jg/RIDkKGt7CorYTnpsbod+/ffv+/evu7uv/9803r1+/f//++i9sVl7Ds9ND34golebI8RrOe5OlTIcKY8nhl7Vrv0iSpHTnkPLJUFF+2GbDXmTLYPknSfR87Lewh9C5CHN6MlQIFvaQ3TjBDfId/aJ71qGEVJQg6kPp8B397Ous06JMnhV19vR7wE8WMqfU4avyi0cF6vZ8pUYUYMXO8IAX8DNvMFQdny06PKFqsqml/t9Wq81m8zl24fPZbL801tW3VH4WKfNgOY/Nt9wbt1icPZ2tCG63k4fbjX7q7NQ7LZsGh89qZI4f7TzAWaPP4PL26BEsvW1dKBJNIpFOB00c3RKFr00tdd1dbb0WJzqmx2WwcewnYIIW5TaD12x2WuLAo7u+paO6uqO8nV9VyUuUGo1MWVSkaO8gedRWd6ib6oFX3OI0m00+I32BkcJpI4Slx+wGIl3f1zeJaklKrRCWK2L+VrG8EpTd3NHegFUodXyglLKqKplCTQGpxq5ep7nHYTXSe6+PA9CHnvJwsJzVYfC2uuNdja+VmiplJYVOp5NpdCqVugrjzw6FuBTdhlF1QD8uQgeIpKg0Q95DFlYq379u7LKYeww+TzZKjNVhcrnQXJ6SDQ2f62y1tHW3NClkkmKiuIQnQFWXKS6hbllaTe3ykZJqAj0lxL/TLivlX4N1JopLJZLXLV3O1h6TDzEwmvRuHnqX7XTi8tQAlyZ+BkQUujNUohLOhjVXq+U6SiXc4qeqSzFcI6XKMUQLvaNSyhrQ5ghJKsoIjGjnnwVo6bLorRhmAyJeB9QJRMt0KmF5zHW1O08VwNlwTCnEA+mluKxZViI8c4D4EBopqYTS3SEcoVTKcKysWtUh0cChwptkbXenFbPuhsUDjAyncUBWd93uQw5i4KPJPuqQfQILl2X5AZ/mIkVzg0Y4s0ikLKoksOIicVVRFbohIoxCdvdY7S69y7gzPu3Qu21n5XMJGlLDjoA1Qq8o5gXE86mqrOxQU1SWsLJSBBcu65DomsEEi0U5Pja93mG1Wj20x4MTRptLbzpFmuXxQX/4USzPKkbX0a6QVYALVPF6KoZXlyhy52CyXNYhRhqvKEeWrHmXj8Ogd7ncerfX6nKxjNfk0CNJnRQ2514+SpiwcuFnnYiiVGj/RrbLR7Xn2ZVqje4SekRLJgVpCQcJfExet4c1ejmW89bQXI2Lc7l9J39iIY8PZBWOtQv1R1nCf6cwvh4h61G8lw9VKVGpSpC6VSX83bccH5e+hsY4L/wz6T1Wr4k2uR0nTzGfs34Pnw4COS00rkgCNpqixLJmdCadXIHiI80dSkkroRpBPsrA2MJFdOTxYbN8TD6HyUQb3IaTCyiPD4mkoBHKnQZrUFaWVGn4FSI0j+bmhipNdfZYSqFsloCHLK4op0gZ8NnRFVm3Nz4Og8lhYkxuwyniY8nxISmVvDnHRyErry5q79AJFy6X63RyuVq3c1p1NVTzarIKgomesyfEu3xAP9YsH5vLZTUh/ZyYDubI8SErqzRwrYJ+QDEwWyoohjpdUx7AeSDXAVqXUiB6lUxSUVrc0JHNAuDjMLhNAh+X0WUynjK/dvmgpw/lMqwKnY1sAm9YX1cHrburqw3QywO9gje6u+vq6sEWIR9AqqSi8nalLCtosq7T5tPrPXaQjN1BO3y0wXuq+rMnPopSTFYlUzchFsAg7nSbza2dPT1elwlgMKCvYNV6Ws1ms1twSY3ddS2iWvRXhTt6rusU6rOdwFiaoBnacLr6vIePqKP9+++Bh8XprjFDHfNld8oEMMzOK7ud81h9BoOrs0Ywb411olpylw+0U70rO0VGoGM6xfNSeI6Prr4rDg60p8fksBmZ/Yucgp/FBeuEzG28sSU3X5Ak8I4Xegb0d73edGLDwXBWU2eWT62+s8dk8FnP4IU5j89g6unszvJxgXe1ARHBALl8JxwQXVuPOd7V3SQS+Lis9jM/iIZzts5GfpyWtrjT7HU4QG4uL/hD48nGBD/panV2gRqzE1/rPEXRKgAuywdWH/Xdbc5OFwTbaD9hYtE+V09rvLtJJ8rVZuBzFvN9kA9KjKam+jZ9J0TnJJfIGg2t+nhXE7nbJy6WD8+JrK1rs+jNJg9z9ITRHpMZOeZaUT5qLRfKB1Gqbepus5hdRy0XOZsJJFwvIkX7cW4+rfv58DNX39hr7vEZCzOifaZWS2NLATYXwae7wKhwqpa6tlaoRQc/wdq8nc7GpoJsPhkfHvW9nXrDvoUh6/G64425uv7Z+PBr/VpYl7kN3K6yWc4A6+GcZyj0mfPyQes4ktx3ucgl8GhptLi9ufTHbV43pHjbDpr2UKkVQQFrbGw8b76b2xqh2/N7ETmDV9eGtpDQ3pElHtfra3KN3lFTU+OGDuX1uvSdnZ3Z3ldb21TXKDR0c03NaVzKQRhrasxmOG8vavdNtbwuyK7OTr3JZ4WFsw+sq2vXl6HHQ/hHFzkD9OI6XtNN3XxD1+tdDpuHY1jiXH/nhh6YMoILcaERnfG2bv6a6yAqwtIZbYuy+87Acg63s60O7XBBpWrt9EKP8XDnonEQBAesTN7OVifaMxG1dMXdPTa6wBKe5Xx6OAZtavWaW13gLYznmqGjQKNQ8XtKYGwbe0HKBy6b83ndYDC7ei3mThNM0CfjkgVOI1/UCs0JkqXN7fXlFSDGARMbj8edNT0OD818ig3IAmAZu9WgNyNPGweZ5hjRPn6/VO812Oyfh8lecA6Xlz89rFPRrNFQfcBh727u/Q6UbA6T3g3/+SAe1hq3y2E9pMd+PkqgJvDULiPMlvGT7FifFqBwq6HGyt+y/g8BzjL4/wNjFK2CVStREAAAAABJRU5ErkJggg==" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lnr lnr-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <!-- Dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="elements.html">Elements</a>
+                                <a class="dropdown-item" href="course-details.html">Course Details</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                Blog
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog-home.html">Blog Home</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
+                            </div>
+                        </li>
+                        <li><a href="contacts.html">Contacts</a></li>
+
+                        <li>
+                            <button class="search">
+                                <span class="lnr lnr-magnifier" id="search"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="search-input" id="search-input-box">
+            <div class="container">
+                <form class="d-flex justify-content-between">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search Here" />
+                    <button type="submit" class="btn"></button>
+                    <span class="lnr lnr-cross" id="close-search" title="Close Search"></span>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- ================ End Header Area ================= -->
+
+    <!-- ================ start banner Area ================= -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12 banner-right">
+                    <h1 class="text-white">
+                        Course Details
+                    </h1>
+                    <p class="mx-auto text-white  mt-20 mb-40">
+                        In the history of modern astronomy, there is probably no one greater leap forward than the
+                        building.
+                    </p>
+                    <div class="link-nav">
+                        <span class="box">
+                            <a href="index.html">Home </a>
+                            <i class="lnr lnr-arrow-right"></i>
+                            <a href="courses.html">Courses </a>
+                            <i class="lnr lnr-arrow-right"></i>
+                            <a href="course-details.html">Course Details</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ End banner Area ================= -->
+
+    <!--================ Start Course Details Area =================-->
+    <section class="course-details-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course-details-left">
+                    <div class="main-image">
+                        <img class="img-fluid" src="img/courses/course-details.jpg" alt="">
+                    </div>
+                    <div class="content-wrapper">
+                        <h4 class="title">Objectives</h4>
+                        <div class="content">
+                            When you enter into any new area of science, you almost always find yourself with a
+                            baffling new language of
+                            technical terms to learn before you can converse with the experts. This is certainly
+                            true in astronomy both in
+                            terms of terms that refer to the cosmos and terms that describe the tools of the trade,
+                            the most prevalent
+                            being the telescope.
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                        </div>
+
+                        <h4 class="title">Eligibility</h4>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea
+                            commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum. Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum.
+                        </div>
+
+                        <h4 class="title">Course Outline</h4>
+                        <div class="content">
+                            <ul class="course-list">
+                                <li class="justify-content-between d-flex">
+                                    <p>Introduction Lesson</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Basics of HTML</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Getting Know about HTML</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Tags and Attributes</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Basics of CSS</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Getting Familiar with CSS</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Introduction to Bootstrap</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Responsive Design</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+                                <li class="justify-content-between d-flex">
+                                    <p>Canvas in HTML 5</p>
+                                    <a class="btn text-uppercase" href="#">View Details</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 right-contents">
+                    <ul>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Trainer’s Name</p>
+                                <span class="or">George Mathews</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Course Fee </p>
+                                <span>$230</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Available Seats </p>
+                                <span>15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Schedule </p>
+                                <span>2.00 pm to 4.00 pm</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn text-uppercase enroll">Enroll the course</a>
+
+                    <h4 class="title">Reviews</h4>
+                    <div class="content">
+                        <div class="review-top row pt-40">
+                            <div class="col-lg-12">
+                                <h6 class="mb-15">Provide Your Rating</h6>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Quality</span>
+                                    <div class="star">
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span>Outstanding</span>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Puncuality</span>
+                                    <div class="star">
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span>Outstanding</span>
+                                </div>
+                                <div class="d-flex flex-row reviews justify-content-between">
+                                    <span>Quality</span>
+                                    <div class="star">
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <span>Outstanding</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedeback">
+                            <h6 class="mb-10">Your Feedback</h6>
+                            <textarea name="feedback" class="form-control" cols="10" rows="10"></textarea>
+                            <div class="mt-10 text-right">
+                                <a href="#" class="btn text-center text-uppercase enroll">Submit</a>
+                            </div>
+                        </div>
+                        <div class="comments-area mb-30">
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c1.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Emilly Blunt</a>
+                                                <div class="star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c2.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Elsie Cunningham</a>
+                                                <div class="star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-list">
+                                <div class="single-comment single-reviews justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="img/blog/c3.jpg" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h5><a href="#">Maria Luna</a>
+                                                <div class="star">
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </h5>
+                                            <p class="comment">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Course Details Area =================-->
+
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Top Products</h4>
+                    <ul>
+                        <li><a href="#">Managed Website</a></li>
+                        <li><a href="#">Manage Reputation</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Marketing Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Experts</a></li>
+                        <li><a href="#">Agencies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>You can trust us. we only send promo offers,</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                            method="get" class="form-inline">
+                            <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+                            <button class="click-btn btn btn-default text-uppercase">subscribe</button>
+                            <div style="position: absolute; left: -5000px;">
+                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                            </div>
+
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row align-items-center">
+                <p class="footer-text m-0 col-lg-8 col-md-12">
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <div class="col-lg-4 col-md-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================ End footer Area ================= -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/hexagons.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
